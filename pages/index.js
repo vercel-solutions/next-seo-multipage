@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Next PoC Multipage</title>
+        <meta name="description" content={`Full description`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
