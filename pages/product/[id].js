@@ -13,15 +13,15 @@ export async function getStaticProps() {
 export async function getStaticPaths() {
   return {
     paths: [],
-    fallback: true
+    fallback: 'blocking'
   }
 }
 
 export default function Page({ id }) {
   return <>
     <Head>
-      <title>{id}</title>
-      <meta name="description" content={`${id} - Here is a precise description of my awesome webpage.`} />
+      <title>Product Id: {id}</title>
+      <meta name="description" content={`${id} - Here is a precise description of my awesome ecommerce.`} />
     </Head>
     <div>
       Product ID, {id}
